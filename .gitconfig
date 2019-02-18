@@ -1,0 +1,16 @@
+[user]
+	name = DinoLai
+	email = dinos80152@gmail.com
+[push]
+	default = current
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	unstage = reset HEAD
+[pager]
+	branch = false
+[core]
+	editor = vim
+	fileMode = false
