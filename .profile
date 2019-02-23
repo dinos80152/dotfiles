@@ -26,3 +26,14 @@ export GEM_HOME=$HOME/.gem
 export PATH=$PATH:$GEM_HOME/bin
 export COMPOSER_PATH=$HOME/.config/composer
 export PATH=$PATH:$COMPOSER_PATH/vendor/bin
+
+# aws snap
+if command -v snap>/dev/null; then
+    export SNAP_PATH=/snap
+    export AWS_PATH=$SNAP_PATH/aws-cli/current
+else
+    export AWS_PATH=/usr/local/aws
+fi
+
+export PATH=$PATH:$AWS_PATH/bin
+

@@ -78,8 +78,8 @@ plugins=(
   colored-man-pages
   zsh-completions
   zsh-autosuggestions
-  history-substring-search
   zsh-syntax-highlighting
+  history-substring-search
 )
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
@@ -91,7 +91,7 @@ source $ZSH/custom/powerlevel9k.sh
 source $ZSH/oh-my-zsh.sh
 
 # reload completion for zsh-completions
-autoload -U compinit && compinit 
+autoload -U compinit && compinit
 
 # User configuration
 
@@ -127,3 +127,5 @@ alias cla='colorls -A'
 alias cls='colorls'
 
 . ~/.profile
+
+source $AWS_PATH/bin/aws_zsh_completer.sh
