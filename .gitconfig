@@ -8,6 +8,7 @@
 	ci = commit
 	st = status
 	br = branch
+	mg = merge
 	unstage = reset HEAD
 [pager]
 	branch = false
