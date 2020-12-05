@@ -128,4 +128,4 @@ alias cls='colorls'
 
 . ~/.profile
 
-source $AWS_PATH/bin/aws_zsh_completer.sh
+complete -C '/usr/local/bin/aws_completer' aws
