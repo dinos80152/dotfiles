@@ -24,7 +24,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/development/flutter/bin
 export GEM_HOME=$HOME/.gem
 export PATH=$PATH:$GEM_HOME/bin
-export COMPOSER_PATH=$HOME/.config/composer
+export COMPOSER_PATH=$HOME/.composer
 export PATH=$PATH:$COMPOSER_PATH/vendor/bin
 
 # aws snap
