@@ -10,8 +10,10 @@
 	br = branch
 	mg = merge
 	unstage = reset HEAD
+	po = push origin
 [pager]
 	branch = false
 [core]
 	editor = vim
 	fileMode = false
+	autocrlf = false
