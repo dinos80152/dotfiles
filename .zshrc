@@ -73,6 +73,7 @@ plugins=(
   git
   docker
   kubectl
+  helm
   aws
   command-not-found
   colored-man-pages
@@ -83,8 +84,6 @@ plugins=(
 )
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=6'
-
-source $(dirname $(gem which colorls))/tab_complete.sh
 
 source $ZSH/custom/powerlevel9k.sh
 
@@ -121,11 +120,10 @@ autoload -U compinit && compinit
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-# some more colorls aliases
-alias cll='colorls -lA --sd'
-alias cla='colorls -A'
-alias cls='colorls'
 
 . ~/.profile
 
-source $AWS_PATH/bin/aws_zsh_completer.sh
+complete -C '/usr/local/bin/aws_completer' aws
+
+zstyle ':bracketed-paste-magic' active-widgets '.self-*'
+
